@@ -11,9 +11,8 @@
   "devDependencies": {
     "bluebird": "^3.7.2",
     "chai": "^4.2.0",
-    "mocha": "^8.2.0"
-  },
-  "dependencies": {
+    "mocha": "^8.2.0",
     "sinon": "^9.2.1"
-  }
+  },
+  "dependencies": {}
 }
