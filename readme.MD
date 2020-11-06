@@ -1,4 +1,6 @@
 [2020-11-01]
+EXAMPLE: Mocha/Chai/Bluebrid/Sinon
+
 using: mocha chai bluebird sinon
 1. unit test run by mocha
 2. unit test assertion by chai
@@ -6,6 +8,8 @@ using: mocha chai bluebird sinon
     with sinon stub / restore 
 
 [2020-11-5]
+EXAMPLE: Typescript in nodejs
+
 typescript install: npm i -g typescript
 generate tsconfig.json for ts compile: tsc --init
  - setup tsconfig.json for root folder(./ts/src) /dist folder(./ts/dist)/node module
