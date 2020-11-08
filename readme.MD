@@ -17,3 +17,8 @@ install typescript dependencies: npm i -D typescript ts-node nodemon @types/node
 create app.ts file in ./ts/src folder
  - create a api on 5000 port via express
 
+【2020-11-07]
+EXAMPLE: spawn / fork
+./threads/child.js & parent-(fork/spawn).js
+- fork: generate new v8 instance
+- spawn: don't generate new v8 instance
