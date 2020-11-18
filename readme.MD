@@ -63,4 +63,4 @@ docker image ls: show all image list of docker
 
 [2020-11-17]
 caching layers
-- 
+- add .dockerignore file with content of files/folders to be ignored in root of workingFolder
