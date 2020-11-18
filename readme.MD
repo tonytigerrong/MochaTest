@@ -62,5 +62,10 @@ docker image ls: show all image list of docker
 
 
 [2020-11-17]
-caching layers
-- add .dockerignore file with content of files/folders to be ignored in root of workingFolder
+Docker
+    caching layers
+    - add .dockerignore file with content of files/folders to be ignored in root of workingFolder
+GIT: setup trace upstream branch
+1. git branch: be sure you are in your own working branch 'feature/caching_layers'
+2. git branch -u origin/main: create a local branch 'origin/main' which points to remote main branch
+3. git branch --set-upstream-to=origin/main : set local current branch 'feature/caching_layers' upstream tracing branch is origin/main(remote main branch)
