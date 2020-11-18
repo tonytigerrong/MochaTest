@@ -49,4 +49,15 @@ docker image ls: show all image list of docker
     - docker build --tag $containerName:@tag $pathOfDockerfile  [build a image via Dockerfile]
     - docker run --name test1 -d -p 8081:8080 $containerName:@tag      [run conainer via the image]
     - ///////////hostPort:containerPort////containerName:tag//////
+[2020-11-13]
+- example for Dockerfile
+    - create Dockerfile in project root folder
+       FROM node:latest
+        WORKDIR /mochatest
+        ADD . .
+        RUN npm install
+        CMD npm start
+    - docker build -t mochatest:latest .
+    - docker run --name mochatest -d -p 8080:5000 mochatest:latest
+
 
