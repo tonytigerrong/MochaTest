@@ -61,3 +61,6 @@ docker image ls: show all image list of docker
     - docker run --name mochatest -d -p 8080:5000 mochatest:latest
 
 
+[2020-11-17]
+caching layers
+- 
