@@ -73,4 +73,4 @@ GIT:
 2. git branch -u origin/main: create a local branch 'origin/main' which points to remote main branch
 3. git branch --set-upstream-to=origin/main : set local current branch 'feature/caching_layers' upstream tracing branch is origin/main(remote main branch)
 4. git push origin feature/caching_layers: push to remote branch feature/caching_layers( now local branch feature/caching_layers is tracing remote branch feature/caching_layers)
-- squash commits before pull
+- squash commits before pull 1 2
