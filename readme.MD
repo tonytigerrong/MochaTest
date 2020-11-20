@@ -65,10 +65,12 @@ docker image ls: show all image list of docker
 Docker
     caching layers
     - add .dockerignore file with content of files/folders to be ignored in root of workingFolder
-GIT: setup trace upstream branch
+GIT: 
+- setup trace upstream branch
     - local working and remote working branch : feature/caching_layers
     - setup local working branch to tracing remote main branch
 1. git branch: be sure you are in your own working branch 'feature/caching_layers'
 2. git branch -u origin/main: create a local branch 'origin/main' which points to remote main branch
 3. git branch --set-upstream-to=origin/main : set local current branch 'feature/caching_layers' upstream tracing branch is origin/main(remote main branch)
 4. git push origin feature/caching_layers: push to remote branch feature/caching_layers( now local branch feature/caching_layers is tracing remote branch feature/caching_layers)
+- squash commits before pull
