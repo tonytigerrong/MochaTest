@@ -17,6 +17,12 @@ install typescript dependencies: npm i -D typescript ts-node nodemon @types/node
 create app.ts file in ./ts/src folder
  - create a api on 5000 port via express
 
+compile ts file:
+ - tsc app.ts
+ - tsc .\ts\src\first.ts --outDir .\ts\dist\
+monitor ts file and compile it: 
+ - tsc app --watch
+
 [2020-11-07]
 EXAMPLE: spawn / fork
 ./threads/child.js & parent-(fork/spawn).js
@@ -74,3 +80,7 @@ GIT:
 3. git branch --set-upstream-to=origin/main : set local current branch 'feature/caching_layers' upstream tracing branch is origin/main(remote main branch)
 4. git push origin feature/caching_layers: push to remote branch feature/caching_layers( now local branch feature/caching_layers is tracing remote branch feature/caching_layers)
 - squash commits before pull 1 2
+
+[2021-01-03]
+1. add demo of typescript syntax, SyntaxTypescript.ts
+2. 

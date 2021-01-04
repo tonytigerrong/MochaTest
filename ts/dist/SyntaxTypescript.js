@@ -30,7 +30,7 @@ var list1 = [1, 2, 3];
 var list2 = [2, 3, 4];
 //Tuple
 var person1 = ['first name', 13];
-//Enum
+//Enum (numeric enum by default)
 var Color;
 (function (Color) {
     Color[Color["Red"] = 5] = "Red";
@@ -40,6 +40,14 @@ var Color;
 ;
 var c = Color.Red;
 console.log("color is", c);
+//string enum
+var Direction;
+(function (Direction) {
+    Direction["Up"] = "Up";
+    Direction["Down"] = "Down";
+    Direction["Right"] = "Right";
+    Direction["Left"] = "Left";
+})(Direction || (Direction = {}));
 //Unknown
 var anUnknown = 4;
 anUnknown = false;
@@ -167,6 +175,9 @@ function fullName2(p) {
 fullName(p1);
 /**
  * class
+ * private : access within class
+ * protect : access by derived class
+ * public  : access by any class
  */
 var Employee = /** @class */ (function () {
     function Employee(name) {
@@ -192,3 +203,21 @@ var Manager = /** @class */ (function (_super) {
 var m1 = new Manager("David");
 m1.greeting();
 m1.planing();
+var Dog = /** @class */ (function () {
+    function Dog() {
+        this.name = "golden retriver";
+    }
+    return Dog;
+}());
+var Fish = /** @class */ (function () {
+    function Fish() {
+        this.name = "Fish";
+    }
+    return Fish;
+}());
+function identity(arg) {
+    return arg;
+}
+var output1 = identity(new Dog());
+var output2 = identity(new Fish());
+console.log(output1, output2);
