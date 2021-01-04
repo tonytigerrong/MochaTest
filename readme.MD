@@ -83,4 +83,4 @@ GIT:
 
 [2021-01-03]
 1. add demo of typescript syntax, SyntaxTypescript.ts
-2. 
+2. Type Script Training website: https://www.youtube.com/watch?v=BwuLxPH8IDs
